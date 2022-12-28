@@ -1,6 +1,6 @@
 name: Issue Template
 description: Submit an issue
-title: "[ISSUE] - <title>"
+title: "ISSUE TITLE - CHANGE ME"
 labels: ["task"]
 assignees: "rockin-robinson"
 body:
