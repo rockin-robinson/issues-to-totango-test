@@ -2,7 +2,7 @@
 name: Touchpoint
 about: Template for touchpoints that are sync'ed to Totango
 title: replace_with_topic_title
-labels: ''
+labels: totango-sync
 assignees: ''
 
 ---
