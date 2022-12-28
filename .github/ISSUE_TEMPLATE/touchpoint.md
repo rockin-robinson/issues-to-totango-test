@@ -1,17 +1,10 @@
 ---
 name: Touchpoint
 about: Template for touchpoints that are sync'ed to Totango
-title: ''
+title: replace_with_topic_title
 labels: ''
 assignees: ''
 
----
-
----
-name: NEW TOPIC
-about: Issue template for collaborating on various topics as needed.
-title: "replace_with_topic_title"
-labels: 'totango-sync'
 ---
 
 ### Description
