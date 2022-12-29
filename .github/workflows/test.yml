@@ -11,8 +11,9 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'task')
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Check tree
+        run: |
+          ls -la
       - name: Main run
         uses: jmassardo/issues-to-totango@version2.0
         with:
