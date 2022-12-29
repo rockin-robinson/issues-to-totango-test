@@ -11,7 +11,7 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'task')
     runs-on: ubuntu-latest
     steps:
-    - uses: jmassardo/issues-to-totango@rockin-robinson-type-option
+    - uses: jmassardo/issues-to-totango@fa4272b7d13c23f238f631f643d9446b1308e457
       with:
         ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
         APP_TOKEN: ${{ secrets.APP_TOKEN }}
