@@ -11,10 +11,8 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'task')
     runs-on: ubuntu-latest
     steps:
-      - name: My first step
-        uses: actions/setup-node@v3
       - name: Main run
-        uses: jmassardo/issues-to-totango@rockin-robinson-type-option
+        uses: jmassardo/issues-to-totango@version2.0
         with:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
