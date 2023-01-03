@@ -15,7 +15,7 @@ jobs:
         run: |
           ls -la
       - name: Main run
-        uses: jmassardo/issues-to-totango@rockin-robinson-type-option
+        uses: jmassardo/issues-to-totango@priority
         with:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
