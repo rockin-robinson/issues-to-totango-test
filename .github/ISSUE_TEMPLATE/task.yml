@@ -22,9 +22,9 @@ body:
       label: Priority
       description: Low (1), Normal (2), or High (3) priority
       options:
-        - 1 (Low)
-        - 2 (Normal)
-        - 3 (High)
+        - 1
+        - 2
+        - 3
     validations:
       required: true
   - type: input
