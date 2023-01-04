@@ -11,9 +11,6 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'task')
     runs-on: ubuntu-latest
     steps:
-      - name: Check tree
-        run: |
-          ls -la
       - name: Main run
         uses: jmassardo/issues-to-totango@priority
         with:
