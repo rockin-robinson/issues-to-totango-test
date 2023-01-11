@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Main run
-        uses: jmassardo/issues-to-totango@v2-validation
+        uses: jmassardo/issues-to-totango@totango-formatting
         with:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Main run
-        uses: jmassardo/issues-to-totango@v2-validation
+        uses: jmassardo/issues-to-totango@totango-formatting
         with:
           ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
           APP_TOKEN: ${{ secrets.APP_TOKEN }}
