@@ -20,7 +20,7 @@ jobs:
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
           TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
-          REPO-TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   update-priority:
     # Prevent action from trying to parse issues that don't have the right label
     if: contains(github.event.issue.labels.*.name, 'High Priority') ||
@@ -36,4 +36,4 @@ jobs:
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
           TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
-          REPO-TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
