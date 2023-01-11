@@ -19,7 +19,8 @@ jobs:
           ACTIVITY_TYPE: ${{ secrets.ACTIVITY_TYPE }}
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
-          TOTANGO_USER_NAME: ${{ secrets.TOTANGO_USER_NAME }}
+          TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
   update-priority:
     # Prevent action from trying to parse issues that don't have the right label
     if: contains(github.event.issue.labels.*.name, 'High Priority') ||
@@ -34,4 +35,5 @@ jobs:
           ACTIVITY_TYPE: ${{ secrets.ACTIVITY_TYPE }}
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
-          TOTANGO_USER_NAME: ${{ secrets.TOTANGO_USER_NAME }}
+          TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
