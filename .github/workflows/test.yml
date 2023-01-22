@@ -19,7 +19,7 @@ jobs:
           ACTIVITY_TYPE: ${{ secrets.ACTIVITY_TYPE }}
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
-          TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
+          TASK_ASSIGNEE: ${{ secrets.TASK_ASSIGNEE }}
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   update-priority:
     # Prevent action from trying to parse issues that don't have the right label
@@ -35,5 +35,5 @@ jobs:
           ACTIVITY_TYPE: ${{ secrets.ACTIVITY_TYPE }}
           TOUCHPOINT_TAGS: ${{ secrets.TOUCHPOINT_TAGS }}
           TOUCHPOINT_TYPE: ${{ secrets.TOUCHPOINT_TYPE }}
-          TASK_ASSIGNEE: ${{ secrets.TOTANGO_USER_NAME }}
+          TASK_ASSIGNEE: ${{ secrets.TASK_ASSIGNEE }}
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
