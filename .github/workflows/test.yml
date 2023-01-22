@@ -9,7 +9,7 @@ jobs:
   get-task:
     # Prevent action from trying to parse issues that don't have the right label
     if: contains(github.event.issue.labels.*.name, 'task') ||
-        contains(github.event.issue.labels.*.name, 'touchpoint') ||
+        contains(github.event.issue.labels.*.name, 'touchpoint')
     runs-on: ubuntu-latest
     steps:
       - name: Main run
