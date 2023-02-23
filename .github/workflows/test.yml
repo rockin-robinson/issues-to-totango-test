@@ -3,7 +3,7 @@ name: totango
 on:
   issues:
     types: [closed, labeled, edited]
-
+    
 jobs:
   get-task:
     # Prevent action from trying to parse issues that don't have the right label
