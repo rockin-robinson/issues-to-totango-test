@@ -3,7 +3,6 @@ name: totango
 on:
   issues:
     types: [closed, labeled, edited]
-  issue_comment:
 
 jobs:
   get-task:
